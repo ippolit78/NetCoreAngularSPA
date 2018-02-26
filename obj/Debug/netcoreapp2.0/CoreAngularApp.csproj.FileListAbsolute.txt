@@ -1,0 +1,12 @@
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\obj\Debug\netcoreapp2.0\CoreAngularApp.csprojResolveAssemblyReference.cache
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\obj\Debug\netcoreapp2.0\CoreAngularApp.csproj.CoreCompileInputs.cache
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\obj\Debug\netcoreapp2.0\CoreAngularApp.AssemblyInfoInputs.cache
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\obj\Debug\netcoreapp2.0\CoreAngularApp.AssemblyInfo.cs
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\bin\Debug\netcoreapp2.0\CoreAngularApp.deps.json
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\bin\Debug\netcoreapp2.0\CoreAngularApp.runtimeconfig.json
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\bin\Debug\netcoreapp2.0\CoreAngularApp.runtimeconfig.dev.json
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\bin\Debug\netcoreapp2.0\CoreAngularApp.dll
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\bin\Debug\netcoreapp2.0\CoreAngularApp.pdb
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\obj\Debug\netcoreapp2.0\CoreAngularApp.dll
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\obj\Debug\netcoreapp2.0\CoreAngularApp.pdb
+C:\notForEvrthing\testProjectMVC\CoreAngularApp\CoreAngularApp\bin\Debug\netcoreapp2.0\DocumentFormat.OpenXml.dll

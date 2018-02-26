@@ -1,0 +1,21 @@
+﻿.container {
+    margin: 20px auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e9f5fb;
+}
+
+.row {
+    margin: 20px;
+}
+
+#selectedFile {
+    margin-bottom: 20px;
+}
+
+#reportButton {
+    margin-bottom: 20px;
+}
+#resultTable {
+    width: 600px;
+}

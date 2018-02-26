@@ -1,0 +1,91 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="span6 center">
+            <h2>Список моделей</h2>
+            <input type="button" value="Добавить" class="btn btn-default" (click)="add()" />
+            <table *ngIf="tableMode; else create" class="table table-striped">
+                <thead>
+                    <tr>
+                        <td>Модель</td>
+                        <td>Производитель</td>
+                        <td>Цена</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let p of products">
+                        <ng-template [ngIf]="product?.id != p.id" [ngIfElse]="edit">
+                            <td>{{p?.name}}</td>
+                            <td>{{p?.company}}</td>
+                            <td>{{p?.price}}</td>
+                            <td>
+                                <button class="btn btn-sm btn-primary" (click)="editProduct(p)">Изменить</button>
+                                <button class="btn btn-sm btn-danger" (click)="delete(p)">Удалить</button>
+                            </td>
+                        </ng-template>
+                    </tr>
+                </tbody>
+            </table>
+
+            <ng-template #edit>
+                <td>
+                    <input type="text" [(ngModel)]="product.name" class="form-control" />
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="product.company" class="form-control" />
+                </td>
+                <td>
+                    <input type="text" [(ngModel)]="product.price" class="form-control" />
+                </td>
+                <td>
+                    <input type="button" value="Сохранить" (click)="save()" class="btn btn-sm btn-success" />
+                    <input type="button" value="Отмена" (click)="cancel()" class="btn btn-sm btn-warning" />
+                </td>
+            </ng-template>
+
+            <ng-template #create>
+                <div class="form-group">
+                    <label>Модель</label>
+                    <input type="text" [(ngModel)]="product.name" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Производитель</label>
+                    <input type="text" [(ngModel)]="product.company" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Цена</label>
+                    <input type="text" [(ngModel)]="product.price" class="form-control" />
+                </div>
+                <div>
+                    <input type="button" value="Сохранить" (click)="save()" class="btn btn-success" />
+                    <input type="button" value="Отмена" (click)="cancel()" class="btn btn-warning" />
+                </div>
+            </ng-template>
+
+            <form method="post" [formGroup]="myform">
+                <div class="form-group">
+                    <label>Прикрепите файл</label>
+                    <input id="selectedFile" name="selectedFile" (change)="handleFileInput($event)" ng-model="uplFile" type="file" class="btn btn-default" formControlName="fileUploadControl" accept=".xlsx, .xls, .csv" />
+                    <button type="submit" class="btn btn-primary" (click)="uploadFileToActivity()">Загрузить</button>
+                </div>
+            </form>
+
+            <!--<button id="reportButton" type="submit" [disabled]="btnDisabled" class="btn btn-success" (click)="makeReport()">Сформировать отчёт</button>-->
+
+            <table id="resultTable" class="table table-striped">
+                <thead>
+                    <tr class="center">
+                        <th>Дата</th>
+                        <th>Максимальное количество работавших операторов</th>
+                    </tr>
+                </thead>
+                <tbody id="tableReportBody">
+                    <tr>
+                        <td>{{resultData}}</td>
+                        <td>{{resultData}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
